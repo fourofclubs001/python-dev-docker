@@ -1,13 +1,9 @@
-# python-dev-docker
-Base docker for python development
+# Base container for python development
 
-# for running the container
-docker-compose up
+Steps:
 
-# Use
-- install VSCode extension Dev Containers
-- run container
-- from vscode select "Dev Container: Attach to Running Container"
-- On the new window select the /code directory
-- Install VSCode python extension
+- docker-compose up --build -d
+- open container with VSCode extension Dev Containers
+- open a terminal on the container and execute cat ~/.ssh/id_rsa.pub
+- copy the generated key on your git account
 - enjoy
